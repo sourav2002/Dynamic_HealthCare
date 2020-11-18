@@ -9,11 +9,11 @@
 }
 #div1{
   position: relative;
-  animation: mymove 7s infinite;
+  animation: mymove 1s infinite;
   margin-top: 30px;
   
 }
-@keyframes mymove {
+@keyframes mymove1 {
     from {left: 0px;}
     to {left: 1530px;}
   }
