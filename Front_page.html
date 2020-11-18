@@ -10,40 +10,31 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">
     </head>
     <body>
-    
-        <nav class="navbar navbar-expand-sm bg-warning navbar-primary">
-            <a href="#" class="navbar-brand"><i class="fas fa-ambulance"></i> Dynamic HeathCare</a>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link" href="Front_page.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="aboutus.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="contactus.html">Contact Us</a>
-                    </li>
-                  </ul>
-        </nav>
+      <div class="topnav">
+        <a  class="logo" href="#" class="navbar-brand"><i class="fas fa-ambulance"></i> Dynamic HeathCare</a>
+        <div class="topnav-right">
+          <a href="Front_page.html">Home</a>
+          <a href="contactus.html">Contact</a>
+          <a href="AboutUs.html">About</a>
+        </div>
+      </div>
 
-        <marquee behaviour="scroll" direction="right" width="100%" scrollamount="20">
-          <div>
-            <img src="road.jpg" style="height: 100px; width: 100px;">
+      <!-- fa-ambulance animation -->
+      <marquee behaviour="scroll" direction="right" width="100%" scrollamount="20">
+        <div>
+          <img src="road.jpg" style="height: 100px; width: 100px;">
         </div>
       </marquee>
         <section id="header" class="jumbotron text-center">
-            <!-- <h1 class="display-2">Search Your Choice</h1>
-            <p class="lead"><strong>Enter Your Current location</strong></p>
-            <input type="text" placeholder="Search.."><br><br> -->
             <p class="lead">
                 <a class="btn btn-info btn-lg" href="map.html" role="button" onclick="getLocation()">Find Nearby Hospital</a>
             </p>
-         </section>  
+        </section>  
 
-         <script src="script.js"></script>
+        <script src="script.js"></script>
 
-         <script src="https://maps.googleapis.com/maps/api/js?AIzaSyD_p5Ov3rvvUI9vAjD_ZymWZzumqkfZz2E&callback=initMap"
-         type="text/javascript">
+        <script src="https://maps.googleapis.com/maps/api/js?AIzaSyD_p5Ov3rvvUI9vAjD_ZymWZzumqkfZz2E&callback=initMap"
+        type="text/javascript">
         </script>
     </body>
 
