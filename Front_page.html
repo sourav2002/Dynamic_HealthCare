@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">
     </head>
     <body>
+    
         <nav class="navbar navbar-expand-sm bg-warning navbar-primary">
             <a href="#" class="navbar-brand"><i class="fas fa-ambulance"></i> Dynamic HeathCare</a>
                 <ul class="navbar-nav">
@@ -24,18 +25,26 @@
                     </li>
                   </ul>
         </nav>
+
         <marquee behaviour="scroll" direction="right" width="100%" scrollamount="20">
           <div>
             <img src="road.jpg" style="height: 100px; width: 100px;">
         </div>
       </marquee>
         <section id="header" class="jumbotron text-center">
-            <h1 class="display-2">Search Your Choice</h1>
+            <!-- <h1 class="display-2">Search Your Choice</h1>
             <p class="lead"><strong>Enter Your Current location</strong></p>
-            <input type="text" placeholder="Search.."><br><br>
+            <input type="text" placeholder="Search.."><br><br> -->
             <p class="lead">
-                <a class="btn btn-info btn-lg" href="#" role="button">Find Nearby Hospital</a>
+                <a class="btn btn-info btn-lg" href="map.html" role="button" onclick="getLocation()">Find Nearby Hospital</a>
             </p>
          </section>  
+
+         <script src="script.js"></script>
+
+         <script src="https://maps.googleapis.com/maps/api/js?AIzaSyD_p5Ov3rvvUI9vAjD_ZymWZzumqkfZz2E&callback=initMap"
+         type="text/javascript">
+        </script>
     </body>
+
 </html>
