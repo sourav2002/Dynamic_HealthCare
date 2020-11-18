@@ -7,7 +7,9 @@
 .nav-item{
     text-decoration: goldenrod;
 }
-#div1{
+
+           /* replace with marquee tag */
+/* #div1{
   position: relative;
   animation: mymove 1s infinite;
   margin-top: 30px;
@@ -16,7 +18,7 @@
 @keyframes mymove1 {
     from {left: 0px;}
     to {left: 1530px;}
-  }
+  } */
 #header{
     background-color: white;
 }
