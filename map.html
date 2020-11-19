@@ -25,19 +25,25 @@
             <img src="road.jpg" style="height: 100px; width: 100px;">
         </div>
       </marquee>
+
+
         <section id="header" class="jumbotron text-center">
             <h1 class="display-2">Search Your Choice</h1>
             <p class="lead"><strong>Enter Your Current location</strong></p>
-            <input type="text" placeholder="Search.."><br><br>
+            <!-- <input id="pac-input" class="controls" type="text" placeholder="Search.."><br><br> -->
             <p class="lead">
                 <a class="btn btn-info btn-lg" onclick="getLocation()" role="button">Allow your Location Permission</a>
             </p>
+            <input id="pac-input" class="controls" type="text" placeholder="Search Box"/>
          </section>  
+         <!-- map will be shown here -->
+         <div id="map"></div> 
 
-         <div id="mapholder"></div>
-
-         <script src="script.js"></script>
-         <script src="https://maps.google.com/maps/api/js?key=AIzaSyD_p5Ov3rvvUI9vAjD_ZymWZzumqkfZz2E"></script>
-
-    </body>
+        <script src="script.js"></script>
+         <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+         <script
+         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_p5Ov3rvvUI9vAjD_ZymWZzumqkfZz2E&callback=initAutocomplete&libraries=places&v=weekly"
+         defer
+       ></script>  
+       </body>
 </html>
